@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="742" pageHeight="842" columnWidth="702" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6cc4ae69-9189-4c25-beaf-e352ce631432">
+	<property name="ireport.zoom" value="5.054470284992972"/>
+	<property name="ireport.x" value="2684"/>
+	<property name="ireport.y" value="386"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM BUKU_2011500432 ORDER BY NOBUKU]]>
+	</queryString>
+	<field name="NoBuku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Judul" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tahun" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="a574ea84-2460-4d74-aacb-26117f6a2500"/>
+				<imageExpression><![CDATA["leaf_banner_green.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="96817d36-6f35-4540-b0b5-9c57fcd4732f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Laporan Daftar Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="0" y="46" width="275" height="22" forecolor="#000000" uuid="a4d9c212-1489-40ef-bf83-4bc1d3c01e4b"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2011500432_Syahbani Hoir]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="52" y="35" width="555" height="1" uuid="052eb123-1318-4f85-bbb1-58568508d067"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="1" y="16" width="37" height="20" uuid="43635a26-1da1-4259-99b3-3a2c14ab50ee"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="16" width="144" height="20" uuid="b756abaf-5def-4ccb-b8c4-5c5a31c9f223"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="16" width="363" height="20" uuid="a9460f8b-b3b9-40db-951c-f09f03190cf8"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Judul Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="569" y="16" width="106" height="20" uuid="de5e8cd6-2154-4714-8798-4986e409de6c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tahun]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="12" width="675" height="1" uuid="8bcaae2b-fe3d-411c-ab60-ec7dda64e00a"/>
+			</line>
+			<line>
+				<reportElement x="37" y="12" width="1" height="23" uuid="ffa6ea41-8a46-4a5e-b2ba-987b074258c8"/>
+			</line>
+			<line>
+				<reportElement x="0" y="12" width="1" height="23" uuid="660a0b68-a8ec-424c-8b67-a61458f82b85"/>
+			</line>
+			<line>
+				<reportElement x="564" y="12" width="1" height="23" uuid="e199e7f4-8d27-4093-961e-935849c624c0"/>
+			</line>
+			<line>
+				<reportElement x="675" y="12" width="1" height="23" uuid="9fd8c223-50c4-465a-9657-2cd9b497a2d5"/>
+			</line>
+			<line>
+				<reportElement x="196" y="12" width="1" height="23" uuid="63d154cb-01b8-4d56-8d74-b3d5c33d93db"/>
+			</line>
+			<line>
+				<reportElement x="0" y="35" width="676" height="1" uuid="6e92ee3b-0dd8-4982-8404-28dfb965e3e1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement style="Detail" x="201" y="0" width="363" height="24" uuid="d1396ec9-b92d-48e0-ae2f-589cfe01dbd2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Judul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="569" y="0" width="106" height="24" uuid="ff68140f-2e20-4dfc-8e4f-95b9c4ea250d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Tahun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="38" height="24" uuid="a2ee9ee8-a766-42ee-b495-59bf959c6705"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="42" y="0" width="154" height="24" uuid="a2fcfb38-160b-484e-876e-b81f73d15774"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NoBuku}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="23" width="676" height="1" uuid="437ca267-25b8-493c-ba38-20faf98c5c17"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="1" height="23" uuid="6aa46cd8-9bb0-445a-93fb-5dd9e4b10306"/>
+			</line>
+			<line>
+				<reportElement x="37" y="0" width="1" height="23" uuid="2511f63e-7353-4226-9bd7-398cfd3ec478"/>
+			</line>
+			<line>
+				<reportElement x="196" y="0" width="1" height="23" uuid="d9f13439-9956-4988-ba0a-6e654b583e8f"/>
+			</line>
+			<line>
+				<reportElement x="564" y="0" width="1" height="23" uuid="f4dae51f-f4a5-427b-861f-0f9a341ec52d"/>
+			</line>
+			<line>
+				<reportElement x="675" y="0" width="1" height="23" uuid="70a57265-efd1-4ee2-a492-93072a1591b2"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="13" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="52" y="3" width="555" height="1" uuid="62e84bbd-c711-4498-b453-7cd42a3b8cde"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="ef5c5109-b152-47c9-9b11-54ada4f3a186"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Halaman "+$V{PAGE_NUMBER}+" dari"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="32d6662e-8ca3-4e68-9be5-77f70275be29"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="41ee7478-0314-49f9-ba59-5208c857a067"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
