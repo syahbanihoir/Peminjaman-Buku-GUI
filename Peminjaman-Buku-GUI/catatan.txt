@@ -1,0 +1,6 @@
+Jika fitur cetak laporan excel eror seperti kalimat dibawah ini:
+java.io.FileNotFoundException: C:\LapBuku_2011500432_SyahbaniHoir.xlsx (Access is denied)
+
+eror terjadi karena software netbeans anda tidak berjalan sebagai Administrator atau netbeans tidak punya hak akses untuk membaca file di C:\ secara langsung.
+
+untuk mengatasinya buka software netbeans dengan cara klik kanan dan pilin run as administrator
